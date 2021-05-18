@@ -1,0 +1,9 @@
+.table{
+    background-color: $color-blanco-principal;
+}
+
+@for $in from 1 through 6{
+    .bucle-#{$in}{
+        background-color: darken($color-blanco-principal, $in * 1.5%);
+    }
+}

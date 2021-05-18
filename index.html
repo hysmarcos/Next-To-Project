@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Next To - Localizador Familiar</title>
+    <meta name="description" content="Sitio web oficial de Next To - App de geolocalizacion familiar">
+    <meta name="keywords"  content="GPS, FAMILIA, LOCALIZADOR, TRACKER">
+    <!-------- Bootstrap CDN --------->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Estilos personalizados CSS -->
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <!-----------------------Navbar---------------------------->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a href="#"><img src="./assets/logo.png " height="40 " class="d-inline-block align-top ml-5 " alt="Logo Next To"></a> 
+        <a class="navbar-brand " href="# ">NEXT TO</a>
+        <button class="navbar-toggler " type="button " data-toggle="collapse" data-target="#navbarNav " aria-controls="navbarNav " aria-expanded="false " aria-label="Toggle navigation ">
+          <span class="navbar-toggler-icon "></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end mr-5" id="navbarNav ">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Home <span class="sr-only ">(current)</span></a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link " href="./pages/caracteristicas.html">Caracteristicas</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link " href="./pages/descargas.html">Descargas</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link " href="./pages/nosotros.html">Nosotros</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link " href="./pages/contacto.html">Contacto</a>
+                </li>
+                <li class="nav-item ml-lg-5">
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Iniciar sesión</button>
+                    <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-sm">Iniciar sesión</button> -->
+                    <!-- <a class="nav-link disabled " href="# " tabindex="-1 " aria-disabled="true ">Disabled</a> -->
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!----------------------Secciones-------------------------->
+    <!----------------------Sección 1-------------------------->
+    <section class="container--color_azul">
+        <div class="container__portada container__portada--RowReverse container-fluid">
+            <div>
+                <img class="portada__imagen" src="./assets/Mobile.png " alt="Imagen Celular GPS ">
+            </div>
+            <div class="container__info">
+                <H1 class="portada__titulos texto--color_blanco text-center">Next To es la red que te acerca a tu familia</H1>
+                <H2 class="portada__subtitulos texto--color_blanco text-center">Next To es una App basada en localizaciones GPS, la cual te informa las úbicaciones de tu red de forma segura</p>
+                <div class="d-flex justify-content-center mb-5">
+                    <a class="btn btn-outline-light" href="./pages/caracteristicas.html" title="Ir a caracteristicas" role="button">Ver caracteristicas</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!----------------------Sección 2-------------------------->
+    <!-- Carousel -->
+    <section class="container--color_blanco">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <!-- Carousel 1  -->
+                <div class="carousel-item container--color_blanco active">
+                    <div class="container__portada-- container__portada--Column container-fluid">
+                        <div>
+                            <img class="portada__imagen " src="./assets/Next-To-Platform.png" alt="Imagen Monitoreo Dispositivos">
+                        </div>
+                        <div class="container__info ">
+                            <H3 class="portada__titulos texto--color_azul">Pasado, presente y futuro</H1>
+                            <p class="portada__subtitulos texto--color_azul text-center">Con Next To, no solo vas a poder monitorear las ubicaciones actuales, conocé las caracteristicas de nuestra App</p>
+                            <div class="d-flex justify-content-center">
+                                <a class="btn btn-outline-primary" href="./pages/caracteristicas.html" title="Ir a caracteristicas" role="button ">Caracteristicas</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Carousel 2 -->
+                <div class="carousel-item container--color_blanco">
+                    <div class="container__portada container__portada--Column container-fluid">
+                        <div>
+                            <img class="portada__imagen " src="./assets/GPS_tracker_route.png" alt="Dispositivo con historial de localizaciones">
+                        </div>
+                        <div class="container__info">
+                            <H3 class="portada__titulos texto--color_azul">Accedé al historial de ubicaciones</H1>
+                            <p class="portada__subtitulos texto--color_azul text-center">Almacenamos el historial de ubicaciones de cada dispositivo, podés consultarlo en cualquier momento de forma segura, desde nuestra App</p>
+                            <div class="d-flex justify-content-center">
+                                <a class="btn btn-outline-primary" href="./pages/caracteristicas.html" title="Ir a caracteristicas" role="button ">Caracteristicas</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Carousel 3 -->
+                <div class="carousel-item container--color_blanco">
+                    <div class="container__portada container__portada--Column container-fluid">
+                        <div>
+                            <img class="portada__imagen" src="./assets/Mobile-GPS.png" alt="Imagen con app programador de reuniones">
+                        </div>
+                        <div class="container__info">
+                            <H3 class="portada__titulos texto--color_azul">Programá reuniones</H1>
+                            <p class="portada__subtitulos texto--color_azul text-center">Next To te permite programar una reunión, de modo que todo tu entorno sepa dónde ir y cuándo van a llegar los demás integrantes</p>
+                            <div class="d-flex justify-content-center mb-5">
+                                <a class="btn btn-outline-primary" href="./pages/caracteristicas.html" title="Ir a caracteristicas" role="button ">Caracteristicas</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Controls carousel -->
+            <div class="">
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon mr-lg-5" aria-hidden="true"><</span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon ml-lg-5" aria-hidden="true">></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!----------------------Sección 3-------------------------->
+    <section class="container--color_azul">
+        <div class="container__portada container__portada--RowReverse container-fluid">
+            <div>
+                <img class="portada__imagen" src="./assets/multiplataforma.png" alt="Imagen con varios dispositivos">
+            </div>
+            <div class="container__info ">
+                <H3 class="portada__titulos texto--color_blanco ">Disponible en todas las plataformas</H1>
+                <p class="portada__subtitulos texto--color_blanco text-center">Para tu facilidad, Next To se encuentra en todas las plataformas. <br>De este modo podrás monitorear las ubicaciones de tu familia o programar reuniones no solo desde tu celular, sino desde nuestras aplicaciones de escritorio.</p>
+                <div class="d-flex justify-content-center mb-5">
+                    <a class="btn btn-outline-light" href="./pages/descargas.html" title="Ir a descargas" role="button ">Descargar</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!------------------ Modal box ---------------->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Iniciar Sesión</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="recipient-name" class="col-form-label">Correo:</label>
+                            <input type="text" class="form-control" id="recipient-name" placeholder="Ingrese su correo aquí">
+                        </div>
+                        <div class="form-group">
+                            <label for="recipient-name" class="col-form-label">Contraseña:</label>
+                            <!-- <label for="message-text" class="col-form-label">Contraseña:</label> -->
+                            <input type="password" class="form-control" id="recipient-name" placeholder="Ingrese su contraseña aquí">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary">Iniciar sesión</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Scripts Bootstraps js -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

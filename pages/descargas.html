@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descargas - Next To</title>
+    <meta name="description" content="Sitio web oficial de Next To - App de geolocalizacion familiar">
+    <meta name="keywords"  content="GPS, FAMILIA, LOCALIZADOR, TRACKER">
+    <!-------- Bootstrap CDN --------->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Estilos personalizados CSS -->
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <!-----------------------Navbar---------------------------->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a href="../index.html"><img src="../assets/logo.png" height="40 " class="d-inline-block align-top ml-5 " alt="Logo Next To"></a> 
+        <a class="navbar-brand " href="../index.html">NEXT TO</a>
+        <button class="navbar-toggler " type="button " data-toggle="collapse" data-target="#navbarNav " aria-controls="navbarNav " aria-expanded="false " aria-label="Toggle navigation ">
+          <span class="navbar-toggler-icon "></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end mr-5" id="navbarNav ">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Home <span class="sr-only ">(current)</span></a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="./caracteristicas.html">Caracteristicas</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link active" href="#">Descargas</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link " href="./nosotros.html">Nosotros</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link " href="./contacto.html">Contacto</a>
+                </li>
+                <li class="nav-item ml-lg-5">
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Iniciar sesión</button>
+                    <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-sm">Iniciar sesión</button> -->
+                    <!-- <a class="nav-link disabled " href="# " tabindex="-1 " aria-disabled="true ">Disabled</a> -->
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!----------------------Secciones-------------------------->
+    <main class="container--color_azul">
+        <div class="container-fluid container__portada--Row">
+            <div>
+                <h2 class="portada__titulos texto--color_blanco">Descargas</h2>
+                <p class="portada__subtitulos texto--color_blanco text-center">Seleccione dentro del siguiente apartado, el Sistema Operativo correspondiente a su dispositivo:</p>
+            </div>
+            <div class="container--color_blanco texto--color_blanco rounded p-lg-5 containerPortadaRowReverse">
+                <div class="m-3">
+                    <a href="https://www.apple.com/la/app-store/" target="_blank">
+                        <img src="../assets/apple.svg" alt="Logo Apple" class="portada__imagen__descarga mr-lg-5">
+                    </a>
+                    
+                    <a class="btn btn-outline-primary" href="https://www.apple.com/la/app-store/" title="Descargar app para Iphone" role="button" target="_blank">Descargar</a>
+                </div>
+                <div class="m-3">
+                    <a href="https://play.google.com/store?hl=es_419&gl=US" target="_blank">
+                        <img src="../assets/android.svg" alt="Logo Android" class="portada__imagen__descarga mr-lg-5">
+                    </a>
+                    <a class="btn btn-outline-primary" href="https://play.google.com/store?hl=es_419&gl=US" role="button" title="Descargar app para Android"  target="_blank">Descargar</a>
+                </div>
+                <div class="m-3 column">
+                    <a href="https://www.microsoft.com/es-ar/store/apps/windows" target="_blank">
+                        <img src="../assets/windows.svg" alt="Logo Windows" class="portada__imagen__descarga mr-lg-5">
+                    </a>
+                    <a class="btn btn-outline-primary" href="https://www.microsoft.com/es-ar/store/apps/windows" target="_blank" title="Descargar app para Windows" role="button ">Descargar</a>
+                </div>       
+            </div>
+        </div>
+    </main>
+    <!------------------ Modal box ---------------->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Iniciar Sesión</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="recipient-name" class="col-form-label">Correo:</label>
+                            <input type="text" class="form-control" id="recipient-name" placeholder="Ingrese su correo aquí">
+                        </div>
+                        <div class="form-group">
+                            <label for="recipient-name" class="col-form-label">Contraseña:</label>
+                            <!-- <label for="message-text" class="col-form-label">Contraseña:</label> -->
+                            <input type="password" class="form-control" id="recipient-name" placeholder="Ingrese su contraseña aquí">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary">Iniciar sesión</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Scripts Bootstraps js -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>

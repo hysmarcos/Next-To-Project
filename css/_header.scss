@@ -1,0 +1,15 @@
+// Variables
+
+$color-azul-principal: rgb(8, 144, 207);
+$color-azul-secundario: rgb(14, 113, 158);
+
+/* navbar modifier nav-items */
+.navbar div .navbar-nav .nav-item .nav-link{
+    color: $color-azul-secundario;
+}
+
+.navbar div .navbar-nav .nav-item .active{
+    color: $color-azul-principal;
+    font-weight: 450;
+    text-decoration-line: underline;
+}

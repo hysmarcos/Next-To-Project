@@ -1,0 +1,56 @@
+/*                          Variables 
+     Colores alternos usados para degradados o connotaciones 
+*/
+
+$color-azul-principal: rgb(8, 144, 207);
+$color-azul-secundario: rgb(14, 113, 158);
+$color-blanco-principal: rgb(255, 255, 255);
+$color-blanco-secundario: rgb(218, 218, 218);
+
+
+
+
+/* Container modifiers */
+
+.container{
+    display: flex;
+    min-height: 100vh;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.container-fluid{
+    display: flex;
+    min-height: 100vh;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+/* row column */
+
+.container__portada--Row{
+    flex-direction: row;
+}
+
+.container__portada--RowReverse{
+    flex-direction: row-reverse;
+}
+
+.container__portada--Column{
+    flex-direction: column;
+}
+
+.container__info{
+    flex-direction: column;    
+}
+
+.container--color_azul{
+    background-image: linear-gradient(80deg, $color-azul-principal , $color-azul-secundario);
+}
+
+.container--color_blanco{
+    background-image: linear-gradient(80deg, $color-blanco-principal , $color-blanco-secundario);
+}

@@ -1,0 +1,167 @@
+// Imports
+
+@import "_header.scss";
+@import "_scrollbar.scss";
+@import "_container-modifier.scss";
+@import "_general.scss";
+@import "_table-style.scss";
+
+// Fonts
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+/*                          Variables 
+     Colores alternos usados para degradados o connotaciones 
+*/
+
+$color-azul-principal: rgb(8, 144, 207);
+$color-azul-secundario: rgb(14, 113, 158);
+$color-blanco-principal: rgb(255, 255, 255);
+$color-blanco-secundario: rgb(218, 218, 218);
+
+$color-resaltado-rojo: rgb(170, 26, 26);
+
+// Estilos
+
+.portada__imagen{
+    width: 100%;
+    height: auto;
+    transition: all 0.5s;
+}
+
+.portada__imagen__descarga{
+    width: 80px;
+    height: auto;
+}
+
+.portada__imagen__descarga-ancha{
+    height: 125px;
+    width: auto;
+}
+
+.avatar{
+    width: 200px;
+    height: auto;
+}
+
+.portada__titulos{
+    font-family: 'Nunito', sans-serif;
+    font-size: 2.0rem;
+    text-align: center;
+    padding-right: 15%;
+    padding-left: 15%;
+}
+
+.portada__subtitulos{
+    font-family: 'Nunito', sans-serif;
+    font-size: 1rem;
+    /* text-align: justify; */
+    padding-right: 15%;
+    padding-left: 15%;
+
+}
+
+.texto--xxg{
+    font-family: 'Nunito', sans-serif;
+    font-size: 6.0rem;
+    text-align: center;
+}
+
+.texto--xg{
+    font-family: 'Nunito', sans-serif;
+    font-size: 4.0rem;
+    text-align: center;
+}
+
+.texto--color_blanco{
+    color: white;
+}
+.texto--color_azul{
+    color: $color-azul-principal;
+}
+
+/* Carousel icons */
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  background-image: none;
+  color: $color-azul-principal;
+  font-size: 20px;
+}
+
+/**** Media querys ****/
+/* Dispositivos chicos hasta 480px */
+@media only screen and (max-width: 480px){
+    
+    .portada__titulos{
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .portada__subtitulos{
+        font-size: 0.8rem;
+        margin-bottom: 3rem;
+    }
+
+    .container__portada{
+        display: flex;
+        min-height: 100vh;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;
+        &.container__portada--Column{
+            flex-direction: column;
+        }
+        &.container__portada--Row{
+            flex-direction: row;
+        }
+        &.container__portada--RowReverse{
+            flex-direction: row-reverse;
+        } 
+        &.container__portada img{
+            margin-top: 20%;
+            margin-bottom: 20%;
+        }    
+    }
+
+    .texto--xg{
+        font-family: 'Nunito', sans-serif;
+        font-size: 3.0rem;
+        text-align: center;
+    }
+}
+/* Dispositivos medianos hasta 768px */
+@media only screen and (min-width: 480px) and (max-width: 768px){
+    .portada__imagen{
+        width: 400px;
+        height: auto;
+        transition: all 0.5s;
+    }
+}
+
+/* Dispositivos grandes hasta 1024px */
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+
+    .portada__imagen{
+        width: 500px;
+        height: auto;
+        transition: all 0.5s;
+    }
+
+    .portada__imagen:hover {
+        transform: scale(1.1);
+    }
+}
+
+/* Dispositivos XG desde 1024px */
+@media only screen and (min-width: 1024px){
+    .portada__imagen{
+        width: 550px;
+        height: auto;
+        transition: all 0.5s;
+
+        &.portada__imagen:hover {
+            transform: scale(1.1);
+        }
+    }
+}

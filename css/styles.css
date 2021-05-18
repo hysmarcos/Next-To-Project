@@ -1,0 +1,308 @@
+/* navbar modifier nav-items */
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap");
+.navbar div .navbar-nav .nav-item .nav-link {
+  color: #0e719e;
+}
+
+.navbar div .navbar-nav .nav-item .active {
+  color: #0890cf;
+  font-weight: 450;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
+
+/* Scrollbar modifier */
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #0e719e;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #0890cf;
+}
+
+/*                          Variables 
+     Colores alternos usados para degradados o connotaciones 
+*/
+/* Container modifiers */
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.container-fluid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+/* row column */
+.container__portada--Row {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.container__portada--RowReverse {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.container__portada--Column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container__info {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container--color_azul {
+  background-image: linear-gradient(80deg, #0890cf, #0e719e);
+}
+
+.container--color_blanco {
+  background-image: linear-gradient(80deg, white, #dadada);
+}
+
+/* Modifier */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* body modifier */
+body {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+.table {
+  background-color: white;
+}
+
+.bucle-1 {
+  background-color: #fbfbfb;
+}
+
+.bucle-2 {
+  background-color: #f7f7f7;
+}
+
+.bucle-3 {
+  background-color: #f4f4f4;
+}
+
+.bucle-4 {
+  background-color: #f0f0f0;
+}
+
+.bucle-5 {
+  background-color: #ececec;
+}
+
+.bucle-6 {
+  background-color: #e8e8e8;
+}
+
+/*                          Variables 
+     Colores alternos usados para degradados o connotaciones 
+*/
+.portada__imagen {
+  width: 100%;
+  height: auto;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.portada__imagen__descarga {
+  width: 80px;
+  height: auto;
+}
+
+.portada__imagen__descarga-ancha {
+  height: 125px;
+  width: auto;
+}
+
+.avatar {
+  width: 200px;
+  height: auto;
+}
+
+.portada__titulos {
+  font-family: 'Nunito', sans-serif;
+  font-size: 2.0rem;
+  text-align: center;
+  padding-right: 15%;
+  padding-left: 15%;
+}
+
+.portada__subtitulos {
+  font-family: 'Nunito', sans-serif;
+  font-size: 1rem;
+  /* text-align: justify; */
+  padding-right: 15%;
+  padding-left: 15%;
+}
+
+.texto--xxg {
+  font-family: 'Nunito', sans-serif;
+  font-size: 6.0rem;
+  text-align: center;
+}
+
+.texto--xg {
+  font-family: 'Nunito', sans-serif;
+  font-size: 4.0rem;
+  text-align: center;
+}
+
+.texto--color_blanco {
+  color: white;
+}
+
+.texto--color_azul {
+  color: #0890cf;
+}
+
+/* Carousel icons */
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  background-image: none;
+  color: #0890cf;
+  font-size: 20px;
+}
+
+/**** Media querys ****/
+/* Dispositivos chicos hasta 480px */
+@media only screen and (max-width: 480px) {
+  .portada__titulos {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  .portada__subtitulos {
+    font-size: 0.8rem;
+    margin-bottom: 3rem;
+  }
+  .container__portada {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    min-height: 100vh;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .container__portada.container__portada--Column {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container__portada.container__portada--Row {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .container__portada.container__portada--RowReverse {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  .container__portada.container__portada img {
+    margin-top: 20%;
+    margin-bottom: 20%;
+  }
+  .texto--xg {
+    font-family: 'Nunito', sans-serif;
+    font-size: 3.0rem;
+    text-align: center;
+  }
+}
+
+/* Dispositivos medianos hasta 768px */
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+  .portada__imagen {
+    width: 400px;
+    height: auto;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+}
+
+/* Dispositivos grandes hasta 1024px */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .portada__imagen {
+    width: 500px;
+    height: auto;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  .portada__imagen:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+}
+
+/* Dispositivos XG desde 1024px */
+@media only screen and (min-width: 1024px) {
+  .portada__imagen {
+    width: 550px;
+    height: auto;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  .portada__imagen.portada__imagen:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+}
+/*# sourceMappingURL=styles.css.map */

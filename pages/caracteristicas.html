@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caracteristicas - Next To</title>
+    <meta name="description" content="Sitio web oficial de Next To - App de geolocalizacion familiar">
+    <meta name="keywords"  content="GPS, FAMILIA, LOCALIZADOR, TRACKER">
+    <!-------- Bootstrap CDN --------->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Estilos personalizados CSS -->
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <!-----------------------Navbar---------------------------->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a href="../index.html"><img src="../assets/logo.png" height="40 " class="d-inline-block align-top ml-5 " alt="Logo Next To"></a> 
+        <a class="navbar-brand " href="../index.html">NEXT TO</a>
+        <button class="navbar-toggler " type="button " data-toggle="collapse" data-target="#navbarNav " aria-controls="navbarNav " aria-expanded="false " aria-label="Toggle navigation ">
+          <span class="navbar-toggler-icon "></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end mr-5" id="navbarNav ">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Home <span class="sr-only ">(current)</span></a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link active" href="#">Caracteristicas</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link " href="./descargas.html">Descargas</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link " href="./nosotros.html">Nosotros</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link " href="./contacto.html">Contacto</a>
+                </li>
+                <li class="nav-item ml-lg-5">
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Iniciar sesión</button>
+                    <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-sm">Iniciar sesión</button> -->
+                    <!-- <a class="nav-link disabled " href="# " tabindex="-1 " aria-disabled="true ">Disabled</a> -->
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!----------------------Secciones-------------------------->
+    <main class="container--color_azul">
+        <div class="container container__portada--Column mt-5">
+            <h2 class="portada__titulos texto--color_blanco mt-5 mb-2">
+                Planes Next To
+            </h2>
+            <!--Tabla de planes-->
+            <table class="table table-hover rounded">
+                <thead>
+                    <tr>
+                        <th scope="col"></th>
+                        <th scope="col">Basic</th>
+                        <th scope="col">Premium</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="bucle-1">
+                        <td scope="row">Visualización en tiempo real</td>
+                        <td>Si</td>
+                        <td>Si</td>
+                    </tr>
+                    <tr class="bucle-2">
+                        <td scope="row">Historial de ubicaciones</td>
+                        <td>No</td>
+                        <td>Si</td>
+                    </tr>
+                    <tr class="bucle-3">
+                        <td scope="row">Tiempo para compartir ubicación</td>
+                        <td>30 min.</td>
+                        <td>Sin limite</td>
+                    </tr>
+                    <tr class="bucle-4">
+                        <td scope="row">Programar reuniones</td>
+                        <td>No</td>
+                        <td>Si</td>
+                    </tr>
+                    <tr class="bucle-5">
+                        <td scope="row">Precio</td>
+                        <td>Free</td>
+                        <td>$650/año</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr class="bucle-6">
+                        <td scope="row"></td>
+                        <td>
+                            <a class="btn btn-outline-primary" href="./descargas.html" title="Ir a descargas" role="button ">Descargar</a>
+                        </td>
+                        <td>
+                            <a class="btn btn-outline-primary" href="./contacto.html" title="Ir a contacto" role="button ">Contactanos</a>
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+            <div class="embed-responsive embed-responsive-16by9 mt-5 mb-5">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ziiKvlIzEaA" allowfullscreen></iframe>
+            </div>
+        </div>
+    </main>
+    <!------------------ Modal box ---------------->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Iniciar Sesión</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="recipient-name" class="col-form-label">Correo:</label>
+                            <input type="text" class="form-control" id="recipient-name" placeholder="Ingrese su correo aquí">
+                        </div>
+                        <div class="form-group">
+                            <label for="recipient-name" class="col-form-label">Contraseña:</label>
+                            <!-- <label for="message-text" class="col-form-label">Contraseña:</label> -->
+                            <input type="password" class="form-control" id="recipient-name" placeholder="Ingrese su contraseña aquí">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary">Iniciar sesión</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Scripts Bootstraps js -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
